@@ -66,9 +66,9 @@ Quiescent current of circuit needs to investigated and if significant the Pi sho
 
 A properly sized Lithium Ion battery should be sourced, and a charging circuit included on our board. We might be able to use the micro-USB power-connector on the Pi for power input, although our system should optimally include an actual on/off switch so that even security-conscious users can be certain the system is actually off when they think it is off.
 
-This means adding an extra micro-usb port on our PCB, which is intended for charging the battery. The RPi will in turn be powered through the appropriate GPIO pin, with a switch in between. This allows the battery to charge while all other components are turned off.
+This means adding an extra micro-usb port on our PCB, which is intended for charging the battery. The RPi will in turn be powered through the appropriate pin on the connector, with a switch in between. This allows the battery to charge while all other components are turned off.
 
-We aim to have *** hours battery life. 
+Current best battery we can find is [this one](https://www.adafruit.com/products/354) from Adafruit, which fits rather perfectly and at 3.7V * 4.4 Ah would give us 16.28 Wh which at 5W gives us somewhat over 3 hrs of operation.
 
 ### HAT standard
 
