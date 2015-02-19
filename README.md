@@ -4,7 +4,7 @@
 
 The idea is to develop a complete and usable handheld system based on the Raspberry Pi. For this purpose we plan to create a PCB that will provide a small touch screen, a tiny keyboard and some other features. Together with a custom enclosure and a Lithium Ion battery this would form a complete handheld system.
 
-![basic sketch](https://github.com/CrackberryPi/hardware/raw/master/basic-sketch.png "basic sketch")
+![basic sketch](https://github.com/CrackberryPi/hardware/raw/master/images/basic-sketch.png "basic sketch")
 
 (The above is a very very rough sketch only)
 
@@ -41,7 +41,7 @@ Looks like we'll go for the same technology (and designer :) ) as [TOHKBD](https
 
 This keyboard is a combination of a metal frame, a silicon mat, plastic keys and a dome-sticker. Here's a picture:
 
-![keyboard tech](https://github.com/CrackberryPi/hardware/raw/master/keyboard-tech.jpg "keyboard-tech")
+![keyboard tech](https://github.com/CrackberryPi/hardware/raw/master/images/keyboard-tech.jpg "keyboard-tech")
 
 ### Real Time Clock
 
@@ -51,11 +51,11 @@ Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs t
 
 Serious cryptographic applications on embedded hardware invariably suffer from a lack of proper sources of random entropy. We're not simply trusting the Pi SoC chip for this, but we're providing an additional avalanche noise circuit such as:
 
-![random circuit](https://github.com/CrackberryPi/hardware/raw/master/random-circuit.png)
+![random circuit](https://github.com/CrackberryPi/hardware/raw/master/images/random-circuit.png)
 
 This needs to be powered by an 18V stepup circuit, possibly something like:
 
-![18V stepup](https://github.com/CrackberryPi/hardware/raw/master/18V-stepup.png)
+![18V stepup](https://github.com/CrackberryPi/hardware/raw/master/images/18V-stepup.png)
 
 Quiescent current of circuit needs to investigated and if significant the Pi should be able to turn this on and off as random entropy will only be needed at boot time.
 
