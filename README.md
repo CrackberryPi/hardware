@@ -47,6 +47,9 @@ This keyboard is a combination of a metal frame, a silicon mat, plastic keys and
 
 Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs that do this. Will probably need its own miniature battery of some sort.
 
+
+![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
+
 ### Hardware random circuit
 
 Serious cryptographic applications on embedded hardware invariably suffer from a lack of proper sources of random entropy. We're not simply trusting the Pi SoC chip for this, but we're providing an additional avalanche noise circuit such as:
