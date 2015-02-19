@@ -66,6 +66,10 @@ Quiescent current of circuit needs to investigated and if significant the Pi sho
 
 A properly sized Lithium Ion battery should be sourced, and a charging circuit included on our board. We might be able to use the micro-USB power-connector on the Pi for power input, although our system should optimally include an actual on/off switch so that even security-conscious users can be certain the system is actually off when they think it is off.
 
+This means adding an extra micro-usb port on our PCB, which is intended for charging the battery. The RPi will in turn be powered through the appropriate GPIO pin, with a switch in between. This allows the battery to charge while all other components are turned off.
+
+We aim to have *** hours battery life. 
+
 ### HAT standard
 
 [HAT](http://www.raspberrypi.org/introducing-raspberry-pi-hats/)s are Raspberry Pi expansion boards that conform to the [standard](https://github.com/raspberrypi/hats) set by the Raspberry Pi foundation. This involves a small I2C EEPROM filled with manufacturer information as well as size constraints (which we will not meet if we include a keyboard). We should nevertheless try to comply with this standard to the extent possible. This will also cause the Pi bootloader and standard software distributions to know about our GPIO pins, meaning less chance to break something.
