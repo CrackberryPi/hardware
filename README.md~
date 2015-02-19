@@ -73,8 +73,6 @@ A properly sized Lithium Ion battery should be sourced, and a charging circuit i
 ![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/HAT.png)
 This needs to be a CAT24C32 (32kbit, 4kbyte)
 
-Check [here](https://github.com/raspberrypi/hats/blob/master/eeprom-format.md) for further details on EEPROM programming.
-
 ## License 
 
 All development documentation, CAD drawings, driver source code that we develop ourselves is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> unless specified otherwise. Please talk to us is you have commercial plans with any of this: we'll probably work something out.
