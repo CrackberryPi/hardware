@@ -76,7 +76,7 @@ Current best battery we can find is [this one](https://www.adafruit.com/products
 
 ![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/HAT.png)
 
-This needs to be a CAT24C32 (32kbit, 4kbyte)
+This needs to be a CAT24C32 (32kbit, 4kbyte). By default the EEPROM is write-protected. By soldering the solder-jumper of shorting the testpads the write-protect is disabled. This will reduce the risk of accidental EEPROM resetting and breaking HAT-'compliance', but still give full freedom to the user.
 
 Check [here](https://github.com/raspberrypi/hats/blob/master/eeprom-format.md) for further details on EEPROM programming.
 
