@@ -14,6 +14,11 @@ The idea is to develop a complete and usable handheld system based on the Raspbe
 
 Very likely a 3.5" 480x320 resistive touch screen. A number of parties sell boards to interface such screens to the Rasberry Pi already. The screens are generally more or less exactly the same size as the Raspberry Pi.
 
+The preliminary candidate is the [CFAF320480C4-035T-TS](https://www.crystalfontz.com/product/CFAF320480C4035TTS#pcn).
+
+![touchscreen TFT](https://github.com/CrackberryPi/hardware/raw/master/images/CFAF320480.jpg "touchscreen TFT")
+
+
 ### Keyboard
 
 Looks like we'll go for the same technology (and designer :) ) as [TOHKBD](https://www.kickstarter.com/projects/2028347278/tohkbd-the-other-half-keyboard-for-your-jolla), with the difference that the Crackberry Pi's keyboard will be narrower. The following is a preliminary key layout:
