@@ -7998,109 +7998,6 @@ package type P</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="jumper">
-<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SJ">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
-</package>
-<package name="SJW">
-<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
-<wire x1="1.905" y1="-1.524" x2="-1.905" y2="-1.524" width="0.1524" layer="21"/>
-<wire x1="1.905" y1="1.524" x2="2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="1.27" x2="-1.905" y2="1.524" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-2.159" y1="-1.27" x2="-1.905" y2="-1.524" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.905" y1="-1.524" x2="2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
-<wire x1="2.159" y1="-1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-2.159" y1="-1.27" x2="-2.159" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.905" y1="1.524" x2="1.905" y2="1.524" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51"/>
-<wire x1="1.524" y1="0" x2="2.032" y2="0" width="0.1524" layer="51"/>
-<wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.1524" layer="51"/>
-<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51" curve="-180"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51" curve="180"/>
-<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
-<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
-<rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
-<rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
-<rectangle x1="1.397" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.016" y1="-0.762" x2="-0.762" y2="0.762" layer="51"/>
-<rectangle x1="-1.27" y1="-0.635" x2="-1.016" y2="0.635" layer="51"/>
-<rectangle x1="-1.397" y1="-0.508" x2="-1.27" y2="0.508" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.397" y2="0.254" layer="51"/>
-<rectangle x1="0.9652" y1="-0.7112" x2="1.0922" y2="-0.5842" layer="51"/>
-<rectangle x1="1.3462" y1="-0.3556" x2="1.4732" y2="-0.2286" layer="51"/>
-<rectangle x1="1.3462" y1="0.2032" x2="1.4732" y2="0.3302" layer="51"/>
-<rectangle x1="0.9652" y1="0.5842" x2="1.0922" y2="0.7112" layer="51"/>
-<rectangle x1="-1.0922" y1="-0.7112" x2="-0.9652" y2="-0.5842" layer="51"/>
-<rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
-<rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
-<rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SJ">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SJ" prefix="SJ" uservalue="yes">
-<description>SMD solder &lt;b&gt;JUMPER&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="SJ" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SJ">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="W" package="SJW">
-<connects>
-<connect gate="1" pin="1" pad="1"/>
-<connect gate="1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8164,11 +8061,6 @@ package type P</description>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
-<part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
-<part name="SJ1" library="jumper" deviceset="SJ" device=""/>
-<part name="SJ2" library="jumper" deviceset="SJ" device=""/>
-<part name="GND19" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8267,18 +8159,13 @@ package type P</description>
 <instance part="GND16" gate="1" x="116.84" y="322.58" rot="MR0"/>
 <instance part="+3V7" gate="G$1" x="116.84" y="363.22"/>
 <instance part="GND17" gate="1" x="96.52" y="322.58" rot="MR0"/>
-<instance part="R4" gate="G$1" x="83.82" y="350.52" rot="R90"/>
-<instance part="+3V8" gate="G$1" x="83.82" y="363.22"/>
+<instance part="R4" gate="G$1" x="91.44" y="353.06" rot="R90"/>
+<instance part="+3V8" gate="G$1" x="91.44" y="363.22"/>
 <instance part="+3V9" gate="G$1" x="127" y="363.22"/>
 <instance part="R5" gate="G$1" x="127" y="345.44" rot="R90"/>
 <instance part="C5" gate="G$1" x="147.32" y="332.74"/>
 <instance part="+3V10" gate="G$1" x="147.32" y="340.36"/>
 <instance part="GND18" gate="1" x="147.32" y="322.58"/>
-<instance part="R6" gate="G$1" x="93.98" y="347.98" rot="R90"/>
-<instance part="+3V11" gate="G$1" x="93.98" y="370.84"/>
-<instance part="SJ1" gate="1" x="93.98" y="337.82" rot="R90"/>
-<instance part="SJ2" gate="1" x="93.98" y="360.68" rot="R90"/>
-<instance part="GND19" gate="1" x="93.98" y="327.66" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -8398,9 +8285,12 @@ package type P</description>
 <wire x1="116.84" y1="327.66" x2="116.84" y2="325.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="IC2" gate="G$1" pin="WP"/>
 <pinref part="IC2" gate="G$1" pin="A2"/>
+<wire x1="96.52" y1="342.9" x2="96.52" y2="337.82" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="A1"/>
 <wire x1="96.52" y1="337.82" x2="96.52" y2="335.28" width="0.1524" layer="91"/>
+<junction x="96.52" y="337.82"/>
 <pinref part="IC2" gate="G$1" pin="A0"/>
 <wire x1="96.52" y1="335.28" x2="96.52" y2="332.74" width="0.1524" layer="91"/>
 <junction x="96.52" y="335.28"/>
@@ -8412,11 +8302,6 @@ package type P</description>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="147.32" y1="327.66" x2="147.32" y2="325.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SJ1" gate="1" pin="1"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="93.98" y1="332.74" x2="93.98" y2="330.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -8465,17 +8350,12 @@ package type P</description>
 <segment>
 <pinref part="+3V8" gate="G$1" pin="+3V3"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="360.68" x2="83.82" y2="355.6" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="360.68" x2="91.44" y2="358.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="147.32" y1="337.82" x2="147.32" y2="335.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="+3V11" gate="G$1" pin="+3V3"/>
-<pinref part="SJ2" gate="1" pin="2"/>
-<wire x1="93.98" y1="368.3" x2="93.98" y2="365.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="INT" class="0">
@@ -8753,10 +8633,11 @@ package type P</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="SCL"/>
-<wire x1="83.82" y1="345.44" x2="96.52" y2="345.44" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="345.44" x2="73.66" y2="345.44" width="0.1524" layer="91"/>
-<junction x="83.82" y="345.44"/>
-<label x="73.66" y="345.44" size="1.778" layer="95"/>
+<wire x1="91.44" y1="347.98" x2="91.44" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="345.44" x2="96.52" y2="345.44" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="345.44" x2="86.36" y2="345.44" width="0.1524" layer="91"/>
+<junction x="91.44" y="345.44"/>
+<label x="81.28" y="345.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO7" class="0">
@@ -8813,22 +8694,6 @@ package type P</description>
 <pinref part="X2" gate="-8" pin="S"/>
 <wire x1="35.56" y1="365.76" x2="40.64" y2="365.76" width="0.1524" layer="91"/>
 <label x="43.18" y="365.76" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="WP"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="342.9" x2="96.52" y2="342.9" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="2"/>
-<junction x="93.98" y="342.9"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="SJ2" gate="1" pin="1"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="355.6" x2="93.98" y2="353.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
