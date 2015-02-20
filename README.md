@@ -77,6 +77,10 @@ This means adding an extra micro-usb port on our PCB, which is intended for char
 
 Current best battery we can find is [this one](https://www.adafruit.com/products/354) from Adafruit, which fits rather perfectly and at 3.7V * 4.4 Ah would give us 16.28 Wh which at 5W gives us somewhat over 3 hrs of operation.
 
+For the charging circuit we will use the MCP73833/4.
+
+![Charging circuit](https://github.com/CrackberryPi/hardware/raw/master/images/charger.jpg "charging circuit")
+
 ### HAT standard
 
 [HAT](http://www.raspberrypi.org/introducing-raspberry-pi-hats/)s are Raspberry Pi expansion boards that conform to the [standard](https://github.com/raspberrypi/hats) set by the Raspberry Pi foundation. This involves a small I2C EEPROM filled with manufacturer information as well as size constraints (which we will not meet if we include a keyboard). We should nevertheless try to comply with this standard to the extent possible. This will also cause the Pi bootloader and standard software distributions to know about our GPIO pins, meaning less chance to break something.
