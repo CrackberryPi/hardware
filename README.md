@@ -79,13 +79,13 @@ Current best battery we can find is [this one](https://www.adafruit.com/products
 
 For the charging circuit we will use the MCP73833/4.
 
-![Charging circuit](https://github.com/CrackberryPi/hardware/images/charger.jpg "charging circuit")
+![Charging circuit](https://github.com/CrackberryPi/hardware/raw/master/images/charger.JPG "charging circuit")
 
 ### HAT standard
 
 [HAT](http://www.raspberrypi.org/introducing-raspberry-pi-hats/)s are Raspberry Pi expansion boards that conform to the [standard](https://github.com/raspberrypi/hats) set by the Raspberry Pi foundation. This involves a small I2C EEPROM filled with manufacturer information as well as size constraints (which we will not meet if we include a keyboard). We should nevertheless try to comply with this standard to the extent possible. This will also cause the Pi bootloader and standard software distributions to know about our GPIO pins, meaning less chance to break something.
 
-![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/HAT.png)
+![EEPROM](https://github.com/CrackberryPi/hardware/raw/master/images/HAT.png)
 
 This needs to be a CAT24C32 (32kbit, 4kbyte). By default the EEPROM is write-protected. By soldering the solder-jumper of shorting the testpads the write-protect is disabled. This will reduce the risk of accidental EEPROM resetting and breaking HAT-'compliance', but still give full freedom to the user.
 
