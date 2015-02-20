@@ -79,7 +79,7 @@ Current best battery we can find is [this one](https://www.adafruit.com/products
 
 For the charging circuit we will use the MCP73833/4.
 
-![Charging circuit](https://github.com/CrackberryPi/hardware/raw/master/images/charger.jpg "charging circuit")
+![Charging circuit](https://github.com/CrackberryPi/hardware/images/charger.jpg "charging circuit")
 
 ### HAT standard
 
