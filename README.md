@@ -24,6 +24,8 @@ The resistive touchscreen requires an additional driver IC, for which we will us
 
 LED backlight can be dimmed using pulse width modulation.
 
+![screen circuitry](https://github.com/CrackberryPi/hardware/raw/master/images/screen.jpg "screen circuitry")
+
 ### Keyboard
 
 Looks like we'll go for the same technology (and designer :) ) as [TOHKBD](https://www.kickstarter.com/projects/2028347278/tohkbd-the-other-half-keyboard-for-your-jolla), with the difference that the Crackberry Pi's keyboard will be narrower. The following is a preliminary key layout:
