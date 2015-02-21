@@ -59,7 +59,9 @@ This keyboard is a combination of a metal frame, a silicon mat, plastic keys and
 
 Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs that do this. Will probably need its own miniature battery of some sort.
 
-MCP7940N
+[MCP7940N](http://nl.mouser.com/Search/ProductDetail.aspx?R=MCP7940N-I%2fSNvirtualkeyMCP7940N-I%2fSNvirtualkey579-MCP7940N-I%2fSN)
+
+[CM200C](http://nl.mouser.com/ProductDetail/Citizen-Finetech-Miyota/CM200C-32768KDZB-UT/?qs=sGAEpiMZZMtzFpQ%252bfsc2VHRVaru4Cxjh)
 
 ![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
 
