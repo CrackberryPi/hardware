@@ -24,7 +24,7 @@ The resistive touchscreen requires an additional driver IC, for which we will us
 
 LED backlight can be dimmed using pulse width modulation.
 
-![screen circuitry](https://github.com/CrackberryPi/hardware/raw/master/images/screen.jpg "screen circuitry")
+![screen circuitry](https://github.com/CrackberryPi/hardware/raw/master/images/screen.JPG "screen circuitry")
 
 ### Keyboard
 
