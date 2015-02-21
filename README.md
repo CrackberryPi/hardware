@@ -92,7 +92,7 @@ For the charging circuit we will use the MCP73833/4.
 
 ![EEPROM](https://github.com/CrackberryPi/hardware/raw/master/images/HAT.png)
 
-This needs to be a CAT24C32 (32kbit, 4kbyte). By default the EEPROM is write-protected. By soldering the solder-jumper of shorting the testpads the write-protect is disabled. This will reduce the risk of accidental EEPROM resetting and breaking HAT-'compliance', but still give full freedom to the user.
+This needs to be a CAT24C32 (32kbit, 4kbyte, same package and pin-out). By default the EEPROM is write-protected. By soldering the solder-jumper of shorting the testpads the write-protect is disabled. This will reduce the risk of accidental EEPROM resetting and breaking HAT-'compliance', but still give full freedom to the user.
 
 Check [here](https://github.com/raspberrypi/hats/blob/master/eeprom-format.md) for further details on EEPROM programming.
 
