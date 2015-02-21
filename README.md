@@ -65,6 +65,8 @@ Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs t
 
 [CR2032](http://nl.mouser.com/ProductDetail/Linx-Technologies/BAT-HLD-001/?qs=sGAEpiMZZMtT9MhkajLHrnz%2fFPUZSgO1koSsSyYdFD4%3d)
 
+[20x2 Header](http://nl.mouser.com/ProductDetail/Harwin/M20-7832046/?qs=sGAEpiMZZMs%252bGHln7q6pmzlZUuX%2f53qjvrmS12bWgrU%3d)
+
 ![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
 
 ### Hardware random circuit
