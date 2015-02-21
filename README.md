@@ -18,8 +18,11 @@ The preliminary candidate is the [CFAF320480C4-035T-TS](https://www.crystalfontz
 
 ![touchscreen TFT](https://github.com/CrackberryPi/hardware/raw/master/images/CFAF320480.jpg "touchscreen TFT")
 
-[Touchscreen controller](http://www.farnell.com/datasheets/1822405.pdf)
+The screen has an integrated Himax HX8357-B microcontroller. It is capable of handling DPI, MIPI and SPI interfaces. The latter we will use, connected directly to the RPi headers.
 
+The resistive touchscreen requires an additional driver IC, for which we will use the [ADS7843](http://www.farnell.com/datasheets/1822405.pdf).
+
+LED backlight can be dimmed using pulse width modulation.
 
 ### Keyboard
 
