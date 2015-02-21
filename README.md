@@ -63,6 +63,8 @@ Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs t
 
 [CM200C](http://nl.mouser.com/ProductDetail/Citizen-Finetech-Miyota/CM200C-32768KDZB-UT/?qs=sGAEpiMZZMtzFpQ%252bfsc2VHRVaru4Cxjh)
 
+[CR2032](http://nl.mouser.com/ProductDetail/Linx-Technologies/BAT-HLD-001/?qs=sGAEpiMZZMtT9MhkajLHrnz%2fFPUZSgO1koSsSyYdFD4%3d)
+
 ![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
 
 ### Hardware random circuit
