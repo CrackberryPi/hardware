@@ -67,6 +67,8 @@ Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs t
 
 [Fuel Gauge](http://nl.mouser.com/ProductDetail/Maxim-Integrated/MAX17043G+U/?qs=sGAEpiMZZMsfD%252bbMpEGFJdMb9ZdXs3SXyyLidJT0S0k%3d)
 
+[V Boost 5V](http://nl.mouser.com/ProductDetail/Texas-Instruments/TPS61200DRCR/?qs=sGAEpiMZZMtY9G8Xaw%2fcnvufCtuHXcIe)
+
 [20x2 Header](http://www.tme.eu/en/details/zl262-40dg/pin-headers/zl262-40dg#)
 
 [ZIF 50](http://www.digikey.com/product-detail/en/62684-501100ALF/609-1197-2-ND/1001511)
