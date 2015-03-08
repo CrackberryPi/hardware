@@ -184,6 +184,24 @@ MAX3223-MAX3243.pdf</description>
 <pin name="Y-" x="-20.32" y="0" length="middle"/>
 <pin name="AUX" x="-20.32" y="-12.7" length="middle"/>
 </symbol>
+<symbol name="TSC2007">
+<pin name="X+" x="-10.16" y="10.16" length="middle"/>
+<pin name="Y+" x="-10.16" y="5.08" length="middle"/>
+<pin name="X-" x="-10.16" y="0" length="middle"/>
+<pin name="Y-" x="-10.16" y="-5.08" length="middle"/>
+<pin name="AUX" x="5.08" y="-20.32" length="middle" rot="R90"/>
+<pin name="GND" x="12.7" y="-20.32" length="middle" rot="R90"/>
+<pin name="A1" x="25.4" y="-20.32" length="middle" rot="R90"/>
+<pin name="A0" x="30.48" y="-20.32" length="middle" rot="R90"/>
+<pin name="SCL" x="40.64" y="-2.54" length="middle" rot="R180"/>
+<pin name="SDA" x="40.64" y="2.54" length="middle" rot="R180"/>
+<pin name="INT" x="40.64" y="7.62" length="middle" rot="R180"/>
+<pin name="VDD" x="7.62" y="25.4" length="middle" rot="R270"/>
+<wire x1="-5.08" y1="20.32" x2="35.56" y2="20.32" width="0.254" layer="94"/>
+<wire x1="35.56" y1="20.32" x2="35.56" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TSC2046">
@@ -205,6 +223,32 @@ MAX3223-MAX3243.pdf</description>
 <connect gate="G$1" pin="VBAT" pad="7"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 <connect gate="G$1" pin="VREF" pad="9"/>
+<connect gate="G$1" pin="X+" pad="2"/>
+<connect gate="G$1" pin="X-" pad="4"/>
+<connect gate="G$1" pin="Y+" pad="3"/>
+<connect gate="G$1" pin="Y-" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSC2007">
+<gates>
+<gate name="G$1" symbol="TSC2007" x="-15.24" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="TSSOP16">
+<connects>
+<connect gate="G$1" pin="A0" pad="14"/>
+<connect gate="G$1" pin="A1" pad="13"/>
+<connect gate="G$1" pin="AUX" pad="16"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="INT" pad="10"/>
+<connect gate="G$1" pin="SCL" pad="12"/>
+<connect gate="G$1" pin="SDA" pad="11"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 <connect gate="G$1" pin="X+" pad="2"/>
 <connect gate="G$1" pin="X-" pad="4"/>
 <connect gate="G$1" pin="Y+" pad="3"/>
