@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -73,14 +73,6 @@
 <package name="FH12-50S-0.5SH">
 <description>&lt;b&gt;0.5mm Pitch Connectors For FPC/FFC&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data sheet&lt;/a&gt;&lt;p&gt;</description>
-<wire x1="-1.2" y1="29.2" x2="-1.5" y2="29.2" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="29.2" x2="-1.5" y2="29.5" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="29.5" x2="-2.2" y2="29.5" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="1.6" x2="-1.5" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="1.6" x2="-1.5" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="1.9" x2="-1.2" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-1.2" y1="1.9" x2="-1.2" y2="29.2" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="1.6" x2="-2.2" y2="29.5" width="0.2032" layer="21"/>
 <smd name="1" x="3.95" y="27.8" dx="0.3" dy="1.3" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="2" x="3.95" y="27.3" dx="0.3" dy="1.3" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="3" x="3.95" y="26.8" dx="0.3" dy="1.3" layer="1" rot="R270" stop="no" cream="no"/>
@@ -131,7 +123,7 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <smd name="48" x="3.95" y="4.3" dx="0.3" dy="1.3" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="49" x="3.95" y="3.8" dx="0.3" dy="1.3" layer="1" rot="R270" stop="no" cream="no"/>
 <smd name="50" x="3.95" y="3.3" dx="0.3" dy="1.3" layer="1" rot="R270" stop="no" cream="no"/>
-<text x="4.795" y="29.4976" size="1.27" layer="25" rot="R270">&gt;NAME</text>
+<text x="7.205" y="3.0024" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="0.3742" y="28.2976" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 <rectangle x1="3.75" y1="2.6" x2="4.15" y2="4" layer="29" rot="R90"/>
 <rectangle x1="3.825" y1="2.675" x2="4.075" y2="3.925" layer="31" rot="R90"/>
@@ -283,13 +275,15 @@ Source: &lt;a href= "http://www.hirose.co.jp/cataloge_hp/e58605370.pdf"&gt;Data 
 <rectangle x1="3.575" y1="3.875" x2="3.775" y2="4.725" layer="51" rot="R270"/>
 <rectangle x1="3.575" y1="3.375" x2="3.775" y2="4.225" layer="51" rot="R270"/>
 <rectangle x1="3.575" y1="2.875" x2="3.775" y2="3.725" layer="51" rot="R270"/>
-<polygon width="0.2032" layer="21">
-<vertex x="-1.5" y="28"/>
-<vertex x="-1.9" y="27.8"/>
-<vertex x="-1.5" y="27.6"/>
-</polygon>
-<smd name="P$1" x="1.2" y="1.2" dx="2.4" dy="2.4" layer="1"/>
-<smd name="P$2" x="1.2" y="30.4" dx="2.4" dy="2.4" layer="1"/>
+<smd name="P$1" x="0.7" y="1.2" dx="2.4" dy="2.4" layer="1"/>
+<smd name="P$2" x="0.7" y="29.9" dx="2.4" dy="2.4" layer="1"/>
+<wire x1="2.5" y1="30" x2="4" y2="30" width="0.3048" layer="21"/>
+<wire x1="4" y1="30" x2="4" y2="28.5" width="0.3048" layer="21"/>
+<wire x1="2.5" y1="1" x2="4" y2="1" width="0.3048" layer="21"/>
+<wire x1="4" y1="1" x2="4" y2="2.5" width="0.3048" layer="21"/>
+<wire x1="-1" y1="30.5" x2="-3" y2="30.5" width="0.3048" layer="21"/>
+<wire x1="-3" y1="30.5" x2="-3" y2="0.5" width="0.3048" layer="21"/>
+<wire x1="-3" y1="0.5" x2="-1" y2="0.5" width="0.3048" layer="21"/>
 </package>
 </packages>
 <symbols>
