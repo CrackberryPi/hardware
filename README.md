@@ -20,7 +20,7 @@ The preliminary candidate is the [CFAF320480C4-035T-TS](https://www.crystalfontz
 
 The screen has an integrated Himax HX8357-B microcontroller. It is capable of handling DPI, MIPI and SPI interfaces. The latter we will use, connected directly to the RPi headers.
 
-The resistive touchscreen requires an additional driver IC, for which we will use the [ADS7843](http://www.farnell.com/datasheets/1822405.pdf).
+The resistive touchscreen requires an additional driver IC, for which we will use the [TSC2007](http://www.ti.com/lit/an/slaa364/slaa364.pdf), which runs on I2C leaving the entire SPI bus for the screen.
 
 LED backlight can be dimmed using pulse width modulation.
 
@@ -77,11 +77,11 @@ Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs t
 
 ### Hardware random circuit
 
-Serious cryptographic applications on embedded hardware invariably suffer from a lack of proper sources of random entropy. We're not simply trusting the Pi SoC chip for this, but we're providing an additional avalanche noise circuit such as:
+Serious cryptographic applications on embedded hardware invariably suffer from a lack of proper sources of random entropy. We're not simply trusting the Pi SoC chip for this, but we're providing an additional avalanche noise with a diode and two MAX2650 amps:
 
 ![random circuit](https://github.com/CrackberryPi/hardware/raw/master/images/random-circuit.png)
 
-This needs to be powered by an 18V stepup circuit, possibly something like:
+This needs to be powered by an 18V stepup circuit, powered by a NCP1406:
 
 ![18V stepup](https://github.com/CrackberryPi/hardware/raw/master/images/18V-stepup.png)
 
@@ -89,13 +89,13 @@ Quiescent current of circuit needs to investigated and if significant the Pi sho
 
 ### Power, Lithium Ion Battery and charging circuit
 
-A properly sized Lithium Ion battery should be sourced, and a charging circuit included on our board. We might be able to use the micro-USB power-connector on the Pi for power input, although our system should optimally include an actual on/off switch so that even security-conscious users can be certain the system is actually off when they think it is off.
+Our system should optimally include a hardware on/off switch so that even security-conscious users can be certain the system is actually off when they think it is off.
 
 This means adding an extra micro-usb port on our PCB, which is intended for charging the battery. The RPi will in turn be powered through the appropriate pin on the connector, with a switch in between. This allows the battery to charge while all other components are turned off.
 
 Current best battery we can find is [this one](https://www.adafruit.com/products/354) from Adafruit, which fits rather perfectly and at 3.7V * 4.4 Ah would give us 16.28 Wh which at 5W gives us somewhat over 3 hrs of operation.
 
-For the charging circuit we will use the MCP73833/4.
+For the charging circuit we will use the BQ24297. This charging IC uses USB input power to charge the battery, has a step-up circuit supplying 5V@1.5A and a complete powerpath management for switching between battery usage and usb input with charging.
 
 ![Charging circuit](https://github.com/CrackberryPi/hardware/raw/master/images/charger.JPG "charging circuit")
 
