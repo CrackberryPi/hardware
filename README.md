@@ -109,7 +109,7 @@ Check [here](https://github.com/raspberrypi/hats/blob/master/eeprom-format.md) f
 
 ### RPi GPIO usage
 
-![gpio](https://github.com/CrackberryPi/hardware/raw/master/images/gpio.jpg)
+![gpio](https://github.com/CrackberryPi/hardware/raw/master/images/gpio.JPG)
 
 ## License 
 
