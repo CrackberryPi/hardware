@@ -17007,7 +17007,6 @@ drill 1.0 mm</description>
 <part name="SV3" library="con-lsta" deviceset="FE09-2" device=""/>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
-<part name="P+9" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17019,7 +17018,7 @@ EEPROM</text>
 <text x="137.16" y="414.02" size="6.4516" layer="95">FFC connector</text>
 <text x="220.98" y="276.86" size="6.4516" layer="97">BACKLIGHT</text>
 <text x="-104.14" y="365.76" size="1.778" layer="97">MCP7940N</text>
-<text x="-203.2" y="182.88" size="5.08" layer="97" rot="R270">USB</text>
+<text x="-66.04" y="231.14" size="5.08" layer="97" rot="R270">USB</text>
 <text x="-5.08" y="198.12" size="5.08" layer="97">LDO</text>
 <text x="45.72" y="472.44" size="2.54" layer="97">Vout=1.19(R1/R2+1)</text>
 <text x="736.6" y="261.62" size="5.08" layer="97">TCA8424</text>
@@ -17047,7 +17046,7 @@ EEPROM</text>
 <instance part="GND18" gate="1" x="-66.04" y="287.02"/>
 <instance part="C7" gate="G$1" x="261.62" y="408.94"/>
 <instance part="GND22" gate="1" x="261.62" y="401.32"/>
-<instance part="GND27" gate="1" x="-236.22" y="154.94"/>
+<instance part="GND27" gate="1" x="-99.06" y="203.2"/>
 <instance part="GND28" gate="1" x="182.88" y="406.4"/>
 <instance part="GND29" gate="1" x="180.34" y="335.28"/>
 <instance part="GND30" gate="1" x="175.26" y="276.86"/>
@@ -17123,7 +17122,7 @@ EEPROM</text>
 <instance part="X5" gate="-48" x="195.58" y="284.48"/>
 <instance part="X5" gate="-49" x="195.58" y="281.94"/>
 <instance part="X5" gate="-50" x="195.58" y="279.4"/>
-<instance part="U$9" gate="G$1" x="-213.36" y="172.72" rot="R270"/>
+<instance part="U$9" gate="G$1" x="-76.2" y="220.98" rot="R270"/>
 <instance part="IC1" gate="G$1" x="5.08" y="185.42"/>
 <instance part="GND48" gate="1" x="5.08" y="170.18"/>
 <instance part="C13" gate="G$1" x="-10.16" y="182.88"/>
@@ -17194,7 +17193,7 @@ EEPROM</text>
 <instance part="X3" gate="-3" x="243.84" y="208.28"/>
 <instance part="GND59" gate="1" x="233.68" y="200.66"/>
 <instance part="R40" gate="G$1" x="198.12" y="208.28" rot="R180"/>
-<instance part="GND24" gate="1" x="-208.28" y="154.94"/>
+<instance part="GND24" gate="1" x="-71.12" y="203.2"/>
 <instance part="U$4" gate="G$1" x="-132.08" y="358.14"/>
 <instance part="SJ2" gate="1" x="236.22" y="223.52" rot="R90"/>
 <instance part="P+2" gate="1" x="236.22" y="236.22"/>
@@ -17244,7 +17243,7 @@ EEPROM</text>
 <instance part="+3V17" gate="G$1" x="-139.7" y="160.02"/>
 <instance part="U$7" gate="G$1" x="726.44" y="294.64"/>
 <instance part="GND41" gate="1" x="698.5" y="289.56"/>
-<instance part="GND42" gate="1" x="726.44" y="256.54"/>
+<instance part="GND42" gate="1" x="726.44" y="254"/>
 <instance part="Q" gate="G$1" x="886.46" y="373.38"/>
 <instance part="W" gate="G$1" x="952.5" y="373.38"/>
 <instance part="E" gate="G$1" x="1023.62" y="373.38"/>
@@ -17333,7 +17332,6 @@ EEPROM</text>
 <instance part="SV3" gate="1" x="477.52" y="368.3"/>
 <instance part="+3V24" gate="G$1" x="454.66" y="370.84"/>
 <instance part="GND62" gate="1" x="449.58" y="363.22" rot="R270"/>
-<instance part="P+9" gate="1" x="-50.8" y="193.04"/>
 </instances>
 <busses>
 </busses>
@@ -17615,12 +17613,12 @@ EEPROM</text>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
 <pinref part="U$9" gate="G$1" pin="GND"/>
-<wire x1="-236.22" y1="172.72" x2="-236.22" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="220.98" x2="-99.06" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="5_0V"/>
 <pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="-208.28" y1="162.56" x2="-208.28" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="210.82" x2="-71.12" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="-"/>
@@ -17701,12 +17699,14 @@ EEPROM</text>
 <segment>
 <pinref part="U$7" gate="G$1" pin="GND"/>
 <pinref part="U$7" gate="G$1" pin="THERMAL"/>
+<wire x1="726.44" y1="266.7" x2="731.52" y2="266.7" width="0.1524" layer="91"/>
 <pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="726.44" y1="256.54" x2="726.44" y2="266.7" width="0.1524" layer="91"/>
 <junction x="726.44" y="266.7"/>
-<wire x1="731.52" y1="266.7" x2="726.44" y2="266.7" width="0.1524" layer="91"/>
-<wire x1="726.44" y1="266.7" x2="726.44" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="731.52" y1="266.7" x2="731.52" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="731.52" y1="261.62" x2="726.44" y2="256.54" width="0.1524" layer="91"/>
 <junction x="731.52" y="266.7"/>
-<junction x="726.44" y="259.08"/>
+<junction x="726.44" y="256.54"/>
 </segment>
 <segment>
 <pinref part="GND" gate="G$1" pin="TP"/>
@@ -17953,8 +17953,6 @@ EEPROM</text>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <junction x="-10.16" y="190.5"/>
 <wire x1="-10.16" y1="190.5" x2="-10.16" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="-50.8" y1="190.5" x2="-50.8" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -18847,8 +18845,8 @@ EEPROM</text>
 <net name="D-" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="2_D-"/>
-<wire x1="-208.28" y1="177.8" x2="-203.2" y2="177.8" width="0.1524" layer="91"/>
-<label x="-205.74" y="177.8" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="226.06" x2="-66.04" y2="226.06" width="0.1524" layer="91"/>
+<label x="-68.58" y="226.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D-/PG"/>
@@ -18859,8 +18857,8 @@ EEPROM</text>
 <net name="D+" class="0">
 <segment>
 <pinref part="U$9" gate="G$1" pin="3_D+"/>
-<wire x1="-208.28" y1="172.72" x2="-203.2" y2="172.72" width="0.1524" layer="91"/>
-<label x="-205.74" y="172.72" size="1.778" layer="95"/>
+<wire x1="-71.12" y1="220.98" x2="-66.04" y2="220.98" width="0.1524" layer="91"/>
+<label x="-68.58" y="220.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D+/PSEL"/>
@@ -18873,10 +18871,12 @@ EEPROM</text>
 <pinref part="U$1" gate="G$1" pin="VBUS"/>
 <wire x1="-114.3" y1="182.88" x2="-152.4" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
-<label x="-142.24" y="182.88" size="1.778" layer="95"/>
+<label x="-142.24" y="185.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-71.12" y1="231.14" x2="-48.26" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="U$9" gate="G$1" pin="1_+5V"/>
-<wire x1="-152.4" y1="182.88" x2="-208.28" y2="182.88" width="0.1524" layer="91"/>
-<junction x="-152.4" y="182.88"/>
+<label x="-53.34" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
