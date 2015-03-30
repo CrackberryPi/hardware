@@ -61,21 +61,17 @@ This keyboard is a combination of a metal frame, a silicon mat, plastic keys and
 
 Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs that do this. Will probably need its own miniature battery of some sort.
 
-[MCP7940N](http://nl.mouser.com/Search/ProductDetail.aspx?R=MCP7940N-I%2fSNvirtualkeyMCP7940N-I%2fSNvirtualkey579-MCP7940N-I%2fSN)
+RTC ic: [MCP7940N](http://nl.mouser.com/Search/ProductDetail.aspx?R=MCP7940N-I%2fSNvirtualkeyMCP7940N-I%2fSNvirtualkey579-MCP7940N-I%2fSN)
 
-[CM200C](http://nl.mouser.com/ProductDetail/Citizen-Finetech-Miyota/CM200C-32768KDZB-UT/?qs=sGAEpiMZZMtzFpQ%252bfsc2VHRVaru4Cxjh)
+Crystal: [CM200C](http://nl.mouser.com/ProductDetail/Citizen-Finetech-Miyota/CM200C-32768KDZB-UT/?qs=sGAEpiMZZMtzFpQ%252bfsc2VHRVaru4Cxjh)
 
-[CR2032](http://nl.mouser.com/ProductDetail/Linx-Technologies/BAT-HLD-001/?qs=sGAEpiMZZMtT9MhkajLHrnz%2fFPUZSgO1koSsSyYdFD4%3d)
+Battery holder: [CR1216](http://nl.mouser.com/ProductDetail/Linx-Technologies/BAT-HLD-012-SMT/?qs=sGAEpiMZZMtbbFRYSpBbWwy2JjMrRsgr)
 
-[Fuel Gauge](http://nl.mouser.com/ProductDetail/Maxim-Integrated/MAX17043G+U/?qs=sGAEpiMZZMsfD%252bbMpEGFJdMb9ZdXs3SXyyLidJT0S0k%3d)
+Header: [20x2 8.5mm](http://www.tme.eu/en/details/zl262-40dg/pin-headers/zl262-40dg#)
 
-[V Boost 5V](http://nl.mouser.com/ProductDetail/Texas-Instruments/TPS61200DRCR/?qs=sGAEpiMZZMtY9G8Xaw%2fcnvufCtuHXcIe)
+Display connector: [ZIF 50](http://www.digikey.com/product-detail/en/62684-501100ALF/609-1197-2-ND/1001511)
 
-[20x2 Header](http://www.tme.eu/en/details/zl262-40dg/pin-headers/zl262-40dg#)
-
-[ZIF 50](http://www.digikey.com/product-detail/en/62684-501100ALF/609-1197-2-ND/1001511)
-
-![rtc](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
+![rtc circuit](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
 
 ### Hardware random circuit
 
