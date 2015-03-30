@@ -108,6 +108,10 @@ A [Si4713](http://nl.mouser.com/ProductDetail/Silicon-Labs/Si4713-B30-GM/?qs=sGA
 
 ![FM transmitter](https://github.com/CrackberryPi/hardware/raw/master/images/fm.JPG "transmitter")
 
+### IR rx/tx
+
+![IR](https://github.com/CrackberryPi/hardware/raw/master/images/ir.JPG "infrared rx/tx")
+
 ### HAT standard
 
 [HAT](http://www.raspberrypi.org/introducing-raspberry-pi-hats/)s are Raspberry Pi expansion boards that conform to the [standard](https://github.com/raspberrypi/hats) set by the Raspberry Pi foundation. This involves a small I2C EEPROM filled with manufacturer information as well as size constraints (which we will not meet if we include a keyboard). We should nevertheless try to comply with this standard to the extent possible. This will also cause the Pi bootloader and standard software distributions to know about our GPIO pins, meaning less chance to break something.

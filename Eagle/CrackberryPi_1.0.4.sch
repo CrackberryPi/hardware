@@ -17303,15 +17303,15 @@ EEPROM</text>
 <instance part="GND" gate="G$1" x="571.5" y="228.6"/>
 <instance part="AUDIO_R" gate="G$1" x="576.58" y="246.38"/>
 <instance part="GND1" gate="1" x="571.5" y="220.98"/>
-<instance part="Q2" gate="G$1" x="500.38" y="193.04"/>
+<instance part="Q2" gate="G$1" x="508" y="193.04"/>
 <instance part="U$8" gate="G$1" x="535.94" y="152.4"/>
-<instance part="C8" gate="G$1" x="492.76" y="182.88"/>
-<instance part="C24" gate="G$1" x="513.08" y="180.34" rot="R180"/>
-<instance part="GND43" gate="1" x="492.76" y="170.18"/>
-<instance part="GND44" gate="1" x="513.08" y="170.18"/>
+<instance part="C8" gate="G$1" x="500.38" y="182.88"/>
+<instance part="C24" gate="G$1" x="515.62" y="180.34" rot="R180"/>
+<instance part="GND43" gate="1" x="500.38" y="170.18"/>
+<instance part="GND44" gate="1" x="515.62" y="170.18"/>
 <instance part="GND45" gate="1" x="513.08" y="149.86" rot="R270"/>
-<instance part="C25" gate="G$1" x="563.88" y="187.96"/>
-<instance part="C26" gate="G$1" x="576.58" y="187.96"/>
+<instance part="C25" gate="G$1" x="556.26" y="182.88"/>
+<instance part="C26" gate="G$1" x="574.04" y="182.88"/>
 <instance part="GND46" gate="1" x="579.12" y="142.24"/>
 <instance part="C27" gate="G$1" x="591.82" y="137.16"/>
 <instance part="C28" gate="G$1" x="584.2" y="137.16"/>
@@ -17716,12 +17716,12 @@ EEPROM</text>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND43" gate="1" pin="GND"/>
-<wire x1="492.76" y1="177.8" x2="492.76" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="177.8" x2="500.38" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="1"/>
 <pinref part="GND44" gate="1" pin="GND"/>
-<wire x1="513.08" y1="177.8" x2="513.08" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="177.8" x2="515.62" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND45" gate="1" pin="GND"/>
@@ -17788,7 +17788,7 @@ EEPROM</text>
 <segment>
 <pinref part="SV3" gate="1" pin="2"/>
 <wire x1="485.14" y1="358.14" x2="495.3" y2="358.14" width="0.1524" layer="91"/>
-<label x="487.68" y="358.14" size="1.778" layer="95"/>
+<label x="492.76" y="358.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL_3V3" class="0">
@@ -17827,13 +17827,14 @@ EEPROM</text>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="SCLK"/>
-<wire x1="541.02" y1="124.46" x2="541.02" y2="104.14" width="0.1524" layer="91"/>
-<label x="541.02" y="104.14" size="1.778" layer="95" rot="R90"/>
+<wire x1="541.02" y1="124.46" x2="541.02" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="541.02" y1="109.22" x2="528.32" y2="109.22" width="0.1524" layer="91"/>
+<label x="528.32" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SV3" gate="1" pin="6"/>
 <wire x1="485.14" y1="363.22" x2="495.3" y2="363.22" width="0.1524" layer="91"/>
-<label x="487.68" y="363.22" size="1.778" layer="95"/>
+<label x="492.76" y="363.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA_3V3" class="0">
@@ -17872,13 +17873,14 @@ EEPROM</text>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="SDIO"/>
-<wire x1="546.1" y1="124.46" x2="546.1" y2="104.14" width="0.1524" layer="91"/>
-<label x="546.1" y="104.14" size="1.778" layer="95" rot="R90"/>
+<wire x1="546.1" y1="124.46" x2="546.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="546.1" y1="106.68" x2="528.32" y2="106.68" width="0.1524" layer="91"/>
+<label x="528.32" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SV3" gate="1" pin="4"/>
 <wire x1="485.14" y1="360.68" x2="495.3" y2="360.68" width="0.1524" layer="91"/>
-<label x="487.68" y="360.68" size="1.778" layer="95"/>
+<label x="492.76" y="360.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -18081,7 +18083,7 @@ EEPROM</text>
 <segment>
 <wire x1="469.9" y1="370.84" x2="459.74" y2="370.84" width="0.1524" layer="91"/>
 <pinref part="SV3" gate="1" pin="11"/>
-<label x="459.74" y="370.84" size="1.778" layer="95"/>
+<label x="457.2" y="370.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO23" class="0">
@@ -18093,7 +18095,7 @@ EEPROM</text>
 <segment>
 <wire x1="469.9" y1="368.3" x2="459.74" y2="368.3" width="0.1524" layer="91"/>
 <pinref part="SV3" gate="1" pin="9"/>
-<label x="459.74" y="368.3" size="1.778" layer="95"/>
+<label x="457.2" y="368.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO18" class="0">
@@ -18112,7 +18114,7 @@ EEPROM</text>
 <segment>
 <pinref part="SV3" gate="1" pin="3"/>
 <wire x1="469.9" y1="360.68" x2="459.74" y2="360.68" width="0.1524" layer="91"/>
-<label x="459.74" y="360.68" size="1.778" layer="95"/>
+<label x="457.2" y="360.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="UART_TX" class="0">
@@ -18124,7 +18126,7 @@ EEPROM</text>
 <segment>
 <pinref part="SV3" gate="1" pin="1"/>
 <wire x1="469.9" y1="358.14" x2="459.74" y2="358.14" width="0.1524" layer="91"/>
-<label x="459.74" y="358.14" size="1.778" layer="95"/>
+<label x="457.2" y="358.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TOUCH_X+" class="0">
@@ -18229,7 +18231,7 @@ EEPROM</text>
 </segment>
 <segment>
 <wire x1="469.9" y1="373.38" x2="459.74" y2="373.38" width="0.1524" layer="91"/>
-<label x="459.74" y="373.38" size="1.778" layer="95"/>
+<label x="457.2" y="373.38" size="1.778" layer="95"/>
 <pinref part="SV3" gate="1" pin="13"/>
 </segment>
 </net>
@@ -18654,7 +18656,6 @@ EEPROM</text>
 <segment>
 <pinref part="SV3" gate="1" pin="7"/>
 <wire x1="469.9" y1="365.76" x2="454.66" y2="365.76" width="0.1524" layer="91"/>
-<label x="459.74" y="365.76" size="1.778" layer="95"/>
 <pinref part="+3V24" gate="G$1" pin="+3V3"/>
 <wire x1="454.66" y1="368.3" x2="454.66" y2="365.76" width="0.1524" layer="91"/>
 </segment>
@@ -19459,8 +19460,8 @@ EEPROM</text>
 </segment>
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="563.88" y1="190.5" x2="563.88" y2="200.66" width="0.1524" layer="91"/>
-<label x="558.8" y="200.66" size="1.778" layer="95"/>
+<wire x1="556.26" y1="185.42" x2="556.26" y2="193.04" width="0.1524" layer="91"/>
+<label x="556.26" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO_R" class="0">
@@ -19471,8 +19472,8 @@ EEPROM</text>
 </segment>
 <segment>
 <pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="576.58" y1="190.5" x2="576.58" y2="200.66" width="0.1524" layer="91"/>
-<label x="571.5" y="200.66" size="1.778" layer="95"/>
+<wire x1="574.04" y1="185.42" x2="574.04" y2="193.04" width="0.1524" layer="91"/>
+<label x="574.04" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -19480,25 +19481,25 @@ EEPROM</text>
 <pinref part="U$8" gate="G$1" pin="GPO3"/>
 <pinref part="Q2" gate="G$1" pin="2"/>
 <wire x1="551.18" y1="175.26" x2="551.18" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="551.18" y1="193.04" x2="513.08" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="193.04" x2="515.62" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
-<wire x1="513.08" y1="193.04" x2="502.92" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="513.08" y1="193.04" x2="513.08" y2="185.42" width="0.1524" layer="91"/>
-<junction x="513.08" y="193.04"/>
+<wire x1="515.62" y1="193.04" x2="510.54" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="515.62" y1="193.04" x2="515.62" y2="185.42" width="0.1524" layer="91"/>
+<junction x="515.62" y="193.04"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="Q2" gate="G$1" pin="1"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="497.84" y1="193.04" x2="492.76" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="492.76" y1="193.04" x2="492.76" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="193.04" x2="500.38" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="500.38" y1="193.04" x2="500.38" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="RCLK"/>
-<wire x1="551.18" y1="124.46" x2="551.18" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="551.18" y1="93.98" x2="487.68" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="93.98" x2="487.68" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="487.68" y1="193.04" x2="492.76" y2="193.04" width="0.1524" layer="91"/>
-<junction x="492.76" y="193.04"/>
+<wire x1="551.18" y1="124.46" x2="551.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="551.18" y1="104.14" x2="492.76" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="492.76" y1="104.14" x2="492.76" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="492.76" y1="193.04" x2="500.38" y2="193.04" width="0.1524" layer="91"/>
+<junction x="500.38" y="193.04"/>
 </segment>
 </net>
 <net name="GPO1" class="0">
@@ -19517,16 +19518,15 @@ EEPROM</text>
 <segment>
 <pinref part="C25" gate="G$1" pin="2"/>
 <pinref part="U$8" gate="G$1" pin="LIN"/>
-<wire x1="563.88" y1="182.88" x2="556.26" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="556.26" y1="182.88" x2="556.26" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="177.8" x2="556.26" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="C26" gate="G$1" pin="2"/>
 <pinref part="U$8" gate="G$1" pin="RIN"/>
-<wire x1="576.58" y1="182.88" x2="576.58" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="576.58" y1="160.02" x2="571.5" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="574.04" y1="177.8" x2="574.04" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="574.04" y1="160.02" x2="571.5" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
