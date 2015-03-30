@@ -8,8 +8,6 @@ The idea is to develop a complete and usable handheld system based on the Raspbe
 
 ![basic sketch](https://github.com/CrackberryPi/hardware/raw/master/images/basic-sketch.png "basic sketch")
 
-(The above is a very very rough sketch only)
-
 ## Hardware functionality
 
 ### Screen
@@ -110,6 +108,12 @@ Check [here](https://github.com/raspberrypi/hats/blob/master/eeprom-format.md) f
 ### RPi GPIO usage
 
 ![gpio](https://github.com/CrackberryPi/hardware/raw/master/images/gpio.JPG)
+
+### Extended header
+
+Additionally to the functionality inside, the possibility to still fiddle around will be kept intact by extending 18 pins on a [2x9 male header](http://nl.mouser.com/ProductDetail/Molex/87760-1816/?qs=sGAEpiMZZMs%252bGHln7q6pmzi5lyGzg2V24XJVwyxGDq0%3d) to the side. 
+
+![gpio out](https://github.com/CrackberryPi/hardware/raw/master/images/gpio_out.JPG)
 
 ## License 
 
