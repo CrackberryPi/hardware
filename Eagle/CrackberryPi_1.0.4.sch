@@ -17153,7 +17153,7 @@ EEPROM</text>
 <instance part="P+17" gate="1" x="33.02" y="510.54"/>
 <instance part="P+21" gate="1" x="149.86" y="304.8"/>
 <instance part="P+23" gate="VCC" x="-30.48" y="393.7"/>
-<instance part="P+24" gate="VCC" x="-20.32" y="375.92"/>
+<instance part="P+24" gate="VCC" x="-20.32" y="373.38"/>
 <instance part="P+25" gate="VCC" x="-66.04" y="396.24"/>
 <instance part="P+26" gate="VCC" x="-73.66" y="396.24"/>
 <instance part="P+27" gate="VCC" x="-83.82" y="401.32"/>
@@ -18416,7 +18416,7 @@ EEPROM</text>
 <pinref part="SV1" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-20.32" y1="368.3" x2="-20.32" y2="373.38" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="368.3" x2="-20.32" y2="370.84" width="0.1524" layer="91"/>
 <pinref part="P+24" gate="VCC" pin="VCC"/>
 <pinref part="SV1" gate="G$1" pin="17"/>
 <wire x1="0" y1="368.3" x2="-20.32" y2="368.3" width="0.1524" layer="91"/>

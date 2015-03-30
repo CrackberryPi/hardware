@@ -95,6 +95,12 @@ For the charging circuit we will use the BQ24297. This charging IC uses USB inpu
 
 ![Charging circuit](https://github.com/CrackberryPi/hardware/raw/master/images/charger.JPG "charging circuit")
 
+### FM transmitter
+
+A [Si4713](http://nl.mouser.com/ProductDetail/Silicon-Labs/Si4713-B30-GM/?qs=sGAEpiMZZMvRDq0TKoyiQrUxOY0c9SY0) controlled over I2C steals the audio from the top of the 3.5jack. An antenna wire needs to be soldered on the PCB to transfer the signal.
+
+![FM transmitter](https://github.com/CrackberryPi/hardware/raw/master/images/fm.JPG "transmitter")
+
 ### HAT standard
 
 [HAT](http://www.raspberrypi.org/introducing-raspberry-pi-hats/)s are Raspberry Pi expansion boards that conform to the [standard](https://github.com/raspberrypi/hats) set by the Raspberry Pi foundation. This involves a small I2C EEPROM filled with manufacturer information as well as size constraints (which we will not meet if we include a keyboard). We should nevertheless try to comply with this standard to the extent possible. This will also cause the Pi bootloader and standard software distributions to know about our GPIO pins, meaning less chance to break something.
