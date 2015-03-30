@@ -107,6 +107,10 @@ This needs to be a CAT24C32 (32kbit, 4kbyte, same package and pin-out). By defau
 
 Check [here](https://github.com/raspberrypi/hats/blob/master/eeprom-format.md) for further details on EEPROM programming.
 
+### RPi GPIO usage
+
+![gpio](https://github.com/CrackberryPi/hardware/raw/master/images/gpio.jpg)
+
 ## License 
 
 All development documentation, CAD drawings, driver source code that we develop ourselves is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> unless specified otherwise. Please talk to us is you have commercial plans with any of this: we'll probably work something out.
