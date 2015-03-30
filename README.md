@@ -55,6 +55,11 @@ This keyboard is a combination of a metal frame, a silicon mat, plastic keys and
 
 ![keyboard tech](https://github.com/CrackberryPi/hardware/raw/master/images/keyboard-tech.jpg "keyboard-tech")
 
+The keyboard is controlled by the TCA8424
+
+![TCA8424](https://github.com/CrackberryPi/hardware/raw/master/images/tca8424.JPG "keyboard controller")
+
+
 ### Real Time Clock
 
 Our circuit provide a Real Time Clock (RTC) to the Raspberry Pi. Plenty of ICs that do this. Will probably need its own miniature battery of some sort.
@@ -90,6 +95,8 @@ Our system should optimally include a hardware on/off switch so that even securi
 This means adding an extra micro-usb port on our PCB, which is intended for charging the battery. The RPi will in turn be powered through the appropriate pin on the connector, with a switch in between. This allows the battery to charge while all other components are turned off.
 
 Current best battery we can find is [this one](https://www.adafruit.com/products/354) from Adafruit, which fits rather perfectly and at 3.7V * 4.4 Ah would give us 16.28 Wh which at 5W gives us somewhat over 3 hrs of operation.
+
+![Battery](https://github.com/CrackberryPi/hardware/raw/master/images/battery-adafruit.jpg "battery")
 
 For the charging circuit we will use the BQ24297. This charging IC uses USB input power to charge the battery, has a step-up circuit supplying 5V@1.5A and a complete powerpath management for switching between battery usage and usb input with charging.
 
