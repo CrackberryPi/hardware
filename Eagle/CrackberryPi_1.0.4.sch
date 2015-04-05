@@ -16741,6 +16741,40 @@ drill 1.0 mm</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="V+">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-1.27" y="1.27" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="V+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="V+" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="V+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16830,15 +16864,10 @@ drill 1.0 mm</description>
 <part name="P+17" library="supply1" deviceset="+15V" device=""/>
 <part name="P+21" library="supply1" deviceset="+5V" device=""/>
 <part name="P+23" library="supply1" deviceset="VCC" device=""/>
-<part name="P+24" library="supply1" deviceset="VCC" device=""/>
 <part name="P+25" library="supply1" deviceset="VCC" device=""/>
 <part name="P+26" library="supply1" deviceset="VCC" device=""/>
 <part name="P+27" library="supply1" deviceset="VCC" device=""/>
 <part name="P+28" library="supply1" deviceset="VCC" device=""/>
-<part name="P+30" library="supply1" deviceset="VCC" device=""/>
-<part name="P+31" library="supply1" deviceset="VCC" device=""/>
-<part name="P+32" library="supply1" deviceset="VCC" device=""/>
-<part name="P+33" library="supply1" deviceset="VCC" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
@@ -17008,6 +17037,20 @@ drill 1.0 mm</description>
 <part name="+3V24" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
+<part name="SDA" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="SCL" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="INT" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="ID-SC" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="ID-SD" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="GD" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="VCC" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="V5" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="V33" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="SUPPLY1" library="supply2" deviceset="V+" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="V+" device=""/>
+<part name="SUPPLY3" library="supply2" deviceset="V+" device=""/>
+<part name="SUPPLY4" library="supply2" deviceset="V+" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17153,15 +17196,10 @@ EEPROM</text>
 <instance part="P+17" gate="1" x="33.02" y="510.54"/>
 <instance part="P+21" gate="1" x="149.86" y="304.8"/>
 <instance part="P+23" gate="VCC" x="-30.48" y="393.7"/>
-<instance part="P+24" gate="VCC" x="-20.32" y="373.38"/>
 <instance part="P+25" gate="VCC" x="-66.04" y="396.24"/>
 <instance part="P+26" gate="VCC" x="-73.66" y="396.24"/>
 <instance part="P+27" gate="VCC" x="-83.82" y="401.32"/>
 <instance part="P+28" gate="VCC" x="-149.86" y="396.24"/>
-<instance part="P+30" gate="VCC" x="-119.38" y="332.74"/>
-<instance part="P+31" gate="VCC" x="-96.52" y="332.74"/>
-<instance part="P+32" gate="VCC" x="-86.36" y="332.74"/>
-<instance part="P+33" gate="VCC" x="-66.04" y="304.8"/>
 <instance part="+3V2" gate="G$1" x="149.86" y="398.78"/>
 <instance part="+3V3" gate="G$1" x="160.02" y="398.78"/>
 <instance part="+3V4" gate="G$1" x="170.18" y="398.78"/>
@@ -17334,6 +17372,20 @@ EEPROM</text>
 <instance part="+3V24" gate="G$1" x="454.66" y="370.84"/>
 <instance part="GND62" gate="1" x="449.58" y="363.22" rot="R270"/>
 <instance part="P+9" gate="1" x="-50.8" y="193.04"/>
+<instance part="SDA" gate="G$1" x="0" y="388.62"/>
+<instance part="SCL" gate="G$1" x="0" y="386.08"/>
+<instance part="INT" gate="G$1" x="0" y="383.54"/>
+<instance part="ID-SC" gate="G$1" x="15.24" y="358.14"/>
+<instance part="ID-SD" gate="G$1" x="0" y="358.14"/>
+<instance part="GD" gate="G$1" x="0" y="381"/>
+<instance part="VCC" gate="G$1" x="-17.78" y="370.84"/>
+<instance part="V5" gate="G$1" x="-7.62" y="187.96"/>
+<instance part="V33" gate="G$1" x="17.78" y="187.96"/>
+<instance part="SUPPLY1" gate="1" x="-20.32" y="373.38"/>
+<instance part="SUPPLY2" gate="1" x="-119.38" y="332.74"/>
+<instance part="SUPPLY3" gate="1" x="-96.52" y="332.74"/>
+<instance part="SUPPLY4" gate="1" x="-86.36" y="332.74"/>
+<instance part="SUPPLY5" gate="1" x="-66.04" y="304.8"/>
 </instances>
 <busses>
 </busses>
@@ -17369,6 +17421,8 @@ EEPROM</text>
 <wire x1="-27.94" y1="370.84" x2="-27.94" y2="378.46" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="9"/>
 <wire x1="-27.94" y1="378.46" x2="0" y2="378.46" width="0.1524" layer="91"/>
+<pinref part="GD" gate="G$1" pin="TP"/>
+<junction x="0" y="378.46"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -17769,6 +17823,8 @@ EEPROM</text>
 <pinref part="U$5" gate="G$1" pin="INT"/>
 <wire x1="-83.82" y1="381" x2="0" y2="381" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="7"/>
+<pinref part="INT" gate="G$1" pin="TP"/>
+<junction x="0" y="381"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="INT"/>
@@ -17804,6 +17860,8 @@ EEPROM</text>
 <label x="-15.24" y="383.54" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="5"/>
 <wire x1="-15.24" y1="383.54" x2="0" y2="383.54" width="0.1524" layer="91"/>
+<pinref part="SCL" gate="G$1" pin="TP"/>
+<junction x="0" y="383.54"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="SCL"/>
@@ -17851,6 +17909,8 @@ EEPROM</text>
 <label x="-15.24" y="386.08" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="3"/>
 <wire x1="-15.24" y1="386.08" x2="0" y2="386.08" width="0.1524" layer="91"/>
+<pinref part="SDA" gate="G$1" pin="TP"/>
+<junction x="0" y="386.08"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="SDA"/>
@@ -17957,6 +18017,8 @@ EEPROM</text>
 <wire x1="-10.16" y1="190.5" x2="-10.16" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
 <wire x1="-50.8" y1="190.5" x2="-50.8" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="V5" gate="G$1" pin="TP"/>
+<junction x="-7.62" y="185.42"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
@@ -18002,6 +18064,8 @@ EEPROM</text>
 <label x="-15.24" y="355.6" size="1.778" layer="95"/>
 <pinref part="SV1" gate="G$1" pin="27"/>
 <wire x1="0" y1="355.6" x2="-15.24" y2="355.6" width="0.1524" layer="91"/>
+<pinref part="ID-SD" gate="G$1" pin="TP"/>
+<junction x="0" y="355.6"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SDA"/>
@@ -18032,6 +18096,8 @@ EEPROM</text>
 <label x="27.94" y="355.6" size="1.778" layer="95" rot="MR0"/>
 <pinref part="SV1" gate="G$1" pin="28"/>
 <wire x1="27.94" y1="355.6" x2="15.24" y2="355.6" width="0.1524" layer="91"/>
+<pinref part="ID-SC" gate="G$1" pin="TP"/>
+<junction x="15.24" y="355.6"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="SCL"/>
@@ -18372,26 +18438,6 @@ EEPROM</text>
 </net>
 <net name="VCC" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="P+30" gate="VCC" pin="VCC"/>
-<wire x1="-119.38" y1="330.2" x2="-119.38" y2="322.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC2" gate="G$1" pin="VCC"/>
-<wire x1="-96.52" y1="330.2" x2="-96.52" y2="314.96" width="0.1524" layer="91"/>
-<pinref part="P+31" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="P+32" gate="VCC" pin="VCC"/>
-<wire x1="-86.36" y1="330.2" x2="-86.36" y2="322.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-66.04" y1="302.26" x2="-66.04" y2="299.72" width="0.1524" layer="91"/>
-<pinref part="P+33" gate="VCC" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="U$5" gate="G$1" pin="VCC"/>
 <wire x1="-83.82" y1="386.08" x2="-83.82" y2="398.78" width="0.1524" layer="91"/>
 <pinref part="P+27" gate="VCC" pin="VCC"/>
@@ -18412,16 +18458,10 @@ EEPROM</text>
 <pinref part="P+28" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="0" y1="388.62" x2="-30.48" y2="388.62" width="0.1524" layer="91"/>
 <pinref part="P+23" gate="VCC" pin="VCC"/>
 <wire x1="-30.48" y1="391.16" x2="-30.48" y2="388.62" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<wire x1="-20.32" y1="368.3" x2="-20.32" y2="370.84" width="0.1524" layer="91"/>
-<pinref part="P+24" gate="VCC" pin="VCC"/>
-<pinref part="SV1" gate="G$1" pin="17"/>
-<wire x1="0" y1="368.3" x2="-20.32" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="388.62" x2="0" y2="388.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$7" gate="G$1" pin="VCC"/>
@@ -18566,6 +18606,8 @@ EEPROM</text>
 <pinref part="C14" gate="G$1" pin="1"/>
 <junction x="20.32" y="185.42"/>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
+<pinref part="V33" gate="G$1" pin="TP"/>
+<junction x="17.78" y="185.42"/>
 </segment>
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
@@ -19566,6 +19608,37 @@ EEPROM</text>
 <segment>
 <pinref part="U$8" gate="G$1" pin="SEN"/>
 <pinref part="R29" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="V+" class="0">
+<segment>
+<wire x1="-20.32" y1="368.3" x2="-20.32" y2="370.84" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="17"/>
+<wire x1="0" y1="368.3" x2="-17.78" y2="368.3" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="1" pin="V+"/>
+<pinref part="VCC" gate="G$1" pin="TP"/>
+<wire x1="-17.78" y1="368.3" x2="-20.32" y2="368.3" width="0.1524" layer="91"/>
+<junction x="-17.78" y="368.3"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-119.38" y1="330.2" x2="-119.38" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="VCC"/>
+<wire x1="-96.52" y1="330.2" x2="-96.52" y2="314.96" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-86.36" y1="330.2" x2="-86.36" y2="322.58" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="-66.04" y1="302.26" x2="-66.04" y2="299.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="1" pin="V+"/>
 </segment>
 </net>
 </nets>

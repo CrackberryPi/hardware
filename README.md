@@ -12,7 +12,7 @@ The idea is to develop a complete and usable handheld system based on the Raspbe
 
 ### Screen
 
-Very likely a 3.5" 480x320 resistive touch screen. A number of parties sell boards to interface such screens to the Rasberry Pi already. The screens are generally more or less exactly the same size as the Raspberry Pi.
+3.5" 480x320 resistive touch screen. A number of parties sell boards to interface such screens to the Rasberry Pi already. The screens are generally more or less exactly the same size as the Raspberry Pi.
 
 The preliminary candidate is the [CFAF320480C4-035T-TS](https://www.crystalfontz.com/product/CFAF320480C4035TTS#pcn).
 
@@ -25,6 +25,19 @@ The resistive touchscreen requires an additional driver IC, for which we will us
 LED backlight can be dimmed using pulse width modulation.
 
 ![screen circuitry](https://github.com/CrackberryPi/hardware/raw/master/images/screen.JPG "screen circuitry")
+
+The screen's reset pin is wired to GPIO6. This pin should be pulsed low after bootup and then be kept high for normal operation.
+
+The chip select pin CE0 is wired to GPIO8.
+```
+Chip select input
+Low:
+ Controller chip is selected. Communications with host is possible.
+High:
+ Controller chip is not selected. Ho
+st interface signals are ignored by the 
+controller.
+```
 
 ### Keyboard
 
