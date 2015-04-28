@@ -34,9 +34,7 @@ Chip select input
 Low:
  Controller chip is selected. Communications with host is possible.
 High:
- Controller chip is not selected. Ho
-st interface signals are ignored by the 
-controller.
+ Controller chip is not selected. Host interface signals are ignored by the controller.
 ```
 
 ### Keyboard
