@@ -8,6 +8,23 @@ The idea is to develop a complete and usable handheld system based on the Raspbe
 
 ![basic sketch](https://github.com/CrackberryPi/hardware/raw/master/images/basic-sketch.png "basic sketch")
 
+## Progress
+
+####Up and running:
+RTC -- Battery not tested, goes to quick
+Random generator -- Lots of noise, lots of 1s and 0s
+
+####Tested but does not work:
+Screen -- some wiring issues
+Touch controller
+
+####ot yet tested
+Keyboard controller
+FM
+IR
+Battery power and charging
+EEPROM
+
 ## Hardware functionality
 
 ### Screen
@@ -87,9 +104,11 @@ Display connector: [ZIF 50](http://www.digikey.com/product-detail/en/62684-50110
 
 ![rtc circuit](https://github.com/CrackberryPi/hardware/raw/master/images/RTC.png)
 
+[RTC setup](http://tom.meinlschmidt.org/2014/02/19/mcp7940-rtc-with-pi/)
+
 ### Hardware random circuit
 
-Serious cryptographic applications on embedded hardware invariably suffer from a lack of proper sources of random entropy. We're not simply trusting the Pi SoC chip for this, but we're providing an additional avalanche noise with a diode and two MAX2650 amps:
+Serious cryptographic applications on embedded hardware invariably suffer from a lack of proper sources of random entropy. We're not simply trusting the Pi SoC chip for this, but we're providing an additional noise with two NPN transistors:
 
 ![random circuit](https://github.com/CrackberryPi/hardware/raw/master/images/random-circuit.png)
 
