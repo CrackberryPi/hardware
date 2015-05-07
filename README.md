@@ -11,18 +11,29 @@ The idea is to develop a complete and usable handheld system based on the Raspbe
 ## Progress
 
 ####Up and running:
-RTC -- Battery not tested, goes to quick
+
+RTC -- [code](http://www.100randomtasks.com/raspberry-pi-rtc)
+
 Random generator -- Lots of noise, lots of 1s and 0s
 
-####Tested but does not work:
-Screen -- some wiring issues
-Touch controller
+IR RX -- Using LIRC able to record IR
 
-####ot yet tested
+####Tested but does not work:
+
+Screen -- some wiring issues
+
+Touch controller -- does not show up in i2cdetect
+
+IR TX
+
+####Not yet tested
+
 Keyboard controller
+
 FM
-IR
+
 Battery power and charging
+
 EEPROM
 
 ## Hardware functionality
